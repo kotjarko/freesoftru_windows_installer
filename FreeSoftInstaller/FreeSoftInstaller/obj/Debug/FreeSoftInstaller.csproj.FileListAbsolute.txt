@@ -1,0 +1,10 @@
+D:\Vladimir\Google Диск\Проекты\fsinstaller\FreeSoftInstaller\FreeSoftInstaller\bin\Debug\FreeSoftInstaller.exe.config
+D:\Vladimir\Google Диск\Проекты\fsinstaller\FreeSoftInstaller\FreeSoftInstaller\obj\Debug\FreeSoftInstaller.exe
+D:\Vladimir\Google Диск\Проекты\fsinstaller\FreeSoftInstaller\FreeSoftInstaller\obj\Debug\FreeSoftInstaller.pdb
+D:\Vladimir\Google Диск\Проекты\fsinstaller\FreeSoftInstaller\FreeSoftInstaller\bin\Debug\FreeSoftInstaller.exe
+D:\Vladimir\Google Диск\Проекты\fsinstaller\FreeSoftInstaller\FreeSoftInstaller\bin\Debug\FreeSoftInstaller.pdb
+D:\Vladimir\Google Диск\Проекты\fsinstaller\FreeSoftInstaller\FreeSoftInstaller\obj\Debug\FreeSoftInstaller.csprojResolveAssemblyReference.cache
+D:\Vladimir\Google Диск\Проекты\fsinstaller\FreeSoftInstaller\FreeSoftInstaller\obj\Debug\FreeSoftInstaller.FreeSoftInstaller.resources
+D:\Vladimir\Google Диск\Проекты\fsinstaller\FreeSoftInstaller\FreeSoftInstaller\obj\Debug\FreeSoftInstaller.Form2.resources
+D:\Vladimir\Google Диск\Проекты\fsinstaller\FreeSoftInstaller\FreeSoftInstaller\obj\Debug\FreeSoftInstaller.Properties.Resources.resources
+D:\Vladimir\Google Диск\Проекты\fsinstaller\FreeSoftInstaller\FreeSoftInstaller\obj\Debug\FreeSoftInstaller.csproj.GenerateResource.Cache

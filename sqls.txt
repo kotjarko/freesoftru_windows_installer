@@ -1,0 +1,81 @@
+---------------------------------------------------
+---------------------------------------------------
+---------------------------------------------------
+DROP TABLE IF EXISTS `new_sec`;
+---------------------------------------------------
+CREATE TABLE `new_sec` (
+  `id` char(20) NOT NULL,
+  `uplevel` char(20) NOT NULL,
+  `desc` char(50) NOT NULL,
+  `name` char(50) NOT NULL,
+  PRIMARY KEY  (`id`,`uplevel`)
+);
+---------------------------------------------------
+INSERT INTO new_sec(  `id` ,  `uplevel` ,  `name` ,  `desc` ) 
+SELECT  `id` ,  `uplevel` ,  `name` ,  `desc` 
+FROM sections;
+---------------------------------------------------
+---------------------------------------------------
+---------------------------------------------------
+DROP TABLE IF EXISTS `new_kat`;
+---------------------------------------------------
+CREATE TABLE `new_kat` (
+  `id` bigint(20) NOT NULL auto_increment,
+  `name` varchar(100) NOT NULL default '',
+  `ver` varchar(20) NOT NULL default '',
+  `xware` enum('FreeWare','ShareWare','Demo','Trial','AdWare','Платная загрузка') NOT NULL default 'FreeWare',
+  `price` varchar(50) NOT NULL default '',
+  `reglink` varchar(100) NOT NULL default '',
+  `aname` varchar(50) NOT NULL default '',
+  `lang` set('0','Русский','Английский','Немецкий','Французский','Украинский','Белорусский','Другой') NOT NULL default '0',
+  `page` text NOT NULL,
+  `os` set('Win95','Win98','WinME','WinNT','Win2000','WinXP','Win2003','WinVista','Win7','Mac OS X','Linux','*nix','Windows CE','Pocket PC','Windows Mobile 2003','Windows Mobile 5','Windows Mobile 6','Windows Phone 7','Symbian OS UIQ','Symbian OS 6','Symbian OS 7','Symbian OS 8','Symbian OS 9','Symbian OS 9.4','Java MIDP 1','Java MIDP 2','Java MIDP 3','iPhone OS','BlackBerry OS','Palm OS','Palm webOS','Android','PHP','Perl','JavaScript') NOT NULL,
+  `platform` enum('Windows','Unix','Mac OS','Windows Mobile','Symbian','Java','iPhone','Palm','Android','Web-scripts','Maemo','BlackBerry') NOT NULL default 'Windows',
+  `sec` varchar(20) NOT NULL default '',
+  PRIMARY KEY `id` (`id`)
+);
+---------------------------------------------------
+INSERT INTO new_kat(  `id` ,  `name` ,  `ver` , `xware`, `price`, `reglink`, `aname`, `lang`, `page`, `os`, `platform`, `sec`) 
+SELECT  `id` ,  `name` ,  `ver` , `xware`, `price`, `reglink`, `aname`, `lang`, `page`, `os`, `platform`, `sec`
+FROM katalog 
+WHERE `platform`='Windows' AND ;
+---------------------------------------------------
+---------------------------------------------------
+---------------------------------------------------
+DROP TABLE IF EXISTS `new_kat_desc`;
+---------------------------------------------------
+CREATE TABLE `new_kat_desc` (
+  `id` bigint(20) NOT NULL auto_increment,
+  `desc250` text NOT NULL,
+  `desc` text NOT NULL,
+  `whatsnew` text NOT NULL,
+  PRIMARY KEY `id` (`id`)
+);
+---------------------------------------------------
+INSERT INTO new_kat_desc(  `id`, `desc250`, `desc`, `whatsnew`) 
+SELECT  `id` ,`desc250`, `desc`, `whatsnew`
+FROM katalog 
+WHERE `platform`='Windows';
+---------------------------------------------------
+---------------------------------------------------
+---------------------------------------------------
+DROP TABLE IF EXISTS `new_slinks`;
+---------------------------------------------------
+CREATE TABLE `new_slinks` (
+  `id` bigint(20) NOT NULL default '0',
+  `name` varchar(120) NOT NULL,
+  `size` varchar(20) NOT NULL default '',
+  `desc` varchar(300) NOT NULL,
+  `type` enum('upload','link','ftp','andrey','page') NOT NULL default 'link'
+);
+---------------------------------------------------
+INSERT INTO new_slinks(`id` ,  `name` ,  `size` ,  `desc` ,`type`) 
+SELECT  `id` ,  `name` ,  `size` ,  `desc` ,`type`
+FROM softlinks WHERE `id` <> 0;
+---------------------------------------------------
+---------------------------------------------------
+---------------------------------------------------
+
+---------------------------------------------------
+
+---------------------------------------------------

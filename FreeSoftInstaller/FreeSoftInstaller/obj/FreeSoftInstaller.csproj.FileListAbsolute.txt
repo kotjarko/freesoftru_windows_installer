@@ -1,0 +1,10 @@
+H:\Documents\kotjara\fsinstaller\FreeSoftInstaller\FreeSoftInstaller\bin\Debug\FreeSoftInstaller.exe
+H:\Documents\kotjara\fsinstaller\FreeSoftInstaller\FreeSoftInstaller\bin\Debug\FreeSoftInstaller.pdb
+H:\Documents\kotjara\fsinstaller\FreeSoftInstaller\FreeSoftInstaller\obj\Debug\ResolveAssemblyReference.cache
+H:\Documents\kotjara\fsinstaller\FreeSoftInstaller\FreeSoftInstaller\obj\Debug\FreeSoftInstaller.Properties.Resources.resources
+H:\Documents\kotjara\fsinstaller\FreeSoftInstaller\FreeSoftInstaller\obj\Debug\FreeSoftInstaller.csproj.GenerateResource.Cache
+H:\Documents\kotjara\fsinstaller\FreeSoftInstaller\FreeSoftInstaller\obj\Debug\FreeSoftInstaller.exe
+H:\Documents\kotjara\fsinstaller\FreeSoftInstaller\FreeSoftInstaller\obj\Debug\FreeSoftInstaller.pdb
+H:\Documents\kotjara\fsinstaller\FreeSoftInstaller\FreeSoftInstaller\obj\Debug\FreeSoftInstaller.FreeSoftInstaller.resources
+H:\Documents\kotjara\fsinstaller\FreeSoftInstaller\FreeSoftInstaller\bin\Debug\FreeSoftInstaller.exe.config
+H:\Documents\kotjara\fsinstaller\FreeSoftInstaller\FreeSoftInstaller\obj\Debug\FreeSoftInstaller.Form2.resources
